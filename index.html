@@ -1,19 +1,15 @@
-<!DOCTYPE html>
 <html>
-<head>
-<script language="javascript">
-function playIt(a)
-{
-   document.getElementById("embed").innerHTML="<embed src='" + a +"' autostart=true loop=false volume=50 hidden=true>";
-   return true;
-}
-</script>
-</head>
 <body>
-    <form action="" method="post"><button type="button" onclick="playIt('sound/ohshit.mp3')">Oh Shit...</button>
-	<button type="button" onclick="playIt('sound/321.mp3')">321 go</button>
-	<button type="button" onclick="playIt('sound/godie.mp3')">Go die</button>
-	<button type="button" onclick="playIt('sound/rdycheck.mp3')">Ready Check</button>
-	<button type="button" onclick="playIt('sound/retakefood.mp3')">Retake food</button><div id="embed"></div></form>
+	<audio id="s1" src="sound/321.mp3"></audio>
+	<audio id="s2" src="sound/godie.mp3"></audio>
+	<audio id="s3" src="sound/rdycheck.mp3"></audio>
+	<audio id="s4" src="sound/retakefood.mp3"></audio>
+	<audio id="s5" src="sound/ohshit.mp3"></audio>
+	
+	<button onclick="document.getElementById('s1').play()">321 go</button>
+ 	<button onclick="document.getElementById('s2').play()">Go die</button>
+	<button onclick="document.getElementById('s3').play()">Ready Check</button>
+	<button onclick="document.getElementById('s4').play()">Retake food</button>
+	<button onclick="document.getElementById('s5').play()">Oh Shit...</button>
 </body>
 </html>
